@@ -1,0 +1,15 @@
+{
+  "name": "pocketmonsterbattler",
+  "version": "1.0.0",
+  "description": "PocketMonsterBattler is a simple game for Pokemon fans. It features battles between randomly selected Pokemon. A score sheet tabulates the response of each battle until the user stops playing.",
+  "main": "index.js",
+  "scripts": {
+    "build": "echo \"npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
