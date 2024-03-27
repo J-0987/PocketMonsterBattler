@@ -4,7 +4,7 @@
   "description": "PocketMonsterBattler is a simple game for Pokemon fans. It features battles between randomly selected Pokemon. A score sheet tabulates the response of each battle until the user stops playing.",
   "main": "index.js",
   "scripts": {
-    "build": "echo \"npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/input.css -o ./assets/css/style.css --watch"
   },
   "keywords": [],
   "author": "",
@@ -13,3 +13,4 @@
     "tailwindcss": "^3.4.1"
   }
 }
+

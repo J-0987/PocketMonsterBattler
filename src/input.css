@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:layer base {
+    :root{
+        --color-text-base : #fffff
+        --poke-blue:42, 117, 187 var(--blue)
+        --poke-lightblue:
+    
+    }
+   
+}

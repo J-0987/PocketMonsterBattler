@@ -1,6 +1,12 @@
 # PoketMonsterBattler
 PocketMonsterBattler is a simple game for Pokemon fans. It features battles between randomly selected Pokemon. A score sheet tabulates the response of each battle until the user stops playing. 
 
+## Random notes
+ * Limited to the primary type of Pokemon to manage the number of arguments to tabulate results
+ * Randomized selection of pokemon for user
+ * Use of Tumblr over reddit dye to reddit's changes 
+ * 
+
 ## Technology
 
 * Reddit API
