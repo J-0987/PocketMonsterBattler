@@ -2,10 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base {
-    :root {
-      --color-primary: 255 115 179;
-      --color-secondary: 111 114 185;
-      /* ... */
+:layer base {
+    :root{
+        --color-text-base : #fffff
+        --poke-blue:42, 117, 187 var(--blue)
+        --poke-lightblue:
+    
     }
-  }
+   
+}
