@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-:layer base {
-    :root{
-        --color-text-base : #fffff
-        --poke-blue:42, 117, 187 var(--blue)
-        --poke-lightblue:
-    
+@layer base{
+    :root {
+        --pokeblue: #2a75bb;
+        --pokedrkblue: #3c5aa6;
+        --pokeyellowshadow: #c7a008;
+        --pokeyellow:  #ffcb05;
+
     }
-   
+}
+@layer components {
+    .btn {
+        @apply px-2 py-1 rounded-xl bg-gradient-to-r from-[#3c5aa6] to-[#2a75bb]
+    }
 }
