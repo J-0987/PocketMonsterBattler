@@ -1,17 +1,25 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [".//**/*.{html,js}"],
+  darkMode: 'selector',
   theme: {
+    
 
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
+      
       colors: {
         themeColor: {
           pokeblue: 'var(--pokeblue)',
           pokedrkblue: 'var(--pokedrkblue)',
           pokeyellow: 'var(--pokeyellow)',
           pokeyellowshadow: 'var(--pokeyellowshadow)',
+        
 
         }
+        
       }
 
     },

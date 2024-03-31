@@ -13,6 +13,17 @@
 }
 @layer components {
     .btn {
-        @apply px-2 py-1 rounded-xl bg-gradient-to-r from-[#3c5aa6] to-[#2a75bb]
+        @apply px-2 py-1 rounded-xl bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-themeColor-pokedrkblue
     }
 }
+
+
+.table-r {
+    @apply border-2 border-themeColor-pokeblue text-themeColor-pokedrkblue bg-gradient-to-r from-cyan-200 to-cyan-400
+}
+
+.bg-purple {
+    @apply bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900
+}
+
+/* bg-gradient-to-r from-[#3c5aa6] to-[#2a75bb] */
