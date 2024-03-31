@@ -39,113 +39,113 @@
                 <button id="start-button"
                     class=" btn hover:animate-spin flex justify-center text-themeColor-pokeyellow text-5xl items-center px-2 py-2">START!</button>
             </div>
-<article id="game-section" class="hidden">
+
+            <article id="game-section" class="hidden">
 
 
-            <!-- Battlefield section-->
-            <section class=" grid md:grid-cols-3 sm:grid-flow-col">
+                <!-- Battlefield section-->
+                <section class=" grid md:grid-cols-3 sm:grid-flow-col">
 
-                <div
-                    class=" overflow-hidden bg-yellow-200 rounded shadow-md shadow-themeColor-pokedrkblue dark:bg-gray-900 dark:rounded dark:shadow-lg dark:shadow-themeColor-pokeyellowshadow">
-                    <!-- Image -->
-                    <figure>
-                        <img src="./assets/images/battle_placeholder.webp" alt="card image"
-                            class="aspect-video w-full" />
-                    </figure>
-                    <!-- Body-->
-                    <div class="p-1">
+                    <div
+                        class=" overflow-hidden bg-yellow-200 rounded shadow-md shadow-themeColor-pokedrkblue dark:bg-gray-900 dark:rounded dark:shadow-lg dark:shadow-themeColor-pokeyellowshadow">
+                        <!-- Image -->
+                        <figure>
+                            <img src="./assets/images/battle_placeholder.webp" alt="card image"
+                                class="aspect-video w-full" />
+                        </figure>
+                        <!-- Body-->
+                        <div class="p-1">
 
+                        </div>
+                        <!-- Action base sized basic button -->
+                        <div class="flex justify-end p-6 pt-0">
+                            <!-- btn -->
+                            <button
+                                class=" btn text-themeColor-pokeyellow inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide">
+                                <span>Change Pokemon!</span>
+                            </button>
+                        </div>
                     </div>
-                    <!-- Action base sized basic button -->
-                    <div class="flex justify-end p-6 pt-0">
-                        <!-- btn -->
+
+                    <div class="flex justify-center flex-col items-center"><!-- div for user card -->
+
                         <button
-                            class=" btn text-themeColor-pokeyellow inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide">
-                            <span>Change Pokemon!</span>
-                        </button>
+                            class=" btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900 ">Fight!</button>
                     </div>
+
+                    <div class="overflow-hidden bg-yellow-200 rounded shadow-md  shadow-themeColor-pokedrkblue">
+                        <!-- Image -->
+                        <figure>
+                            <img src="./assets/images/0c6beea8b51b64f6cbee98bf0fb5d2ce.gif" alt="card image"
+                                class="aspect-video w-full" />
+                        </figure>
+                    </div>
+                </section>
+
+                <!-- Results Section -->
+
+                <h2
+                    class="w-full max-w-screen py-2 my-4 font-bold flex justify-center items-center text-lg text-themeColor-pokedrkblue bg-gradient-to-b from-orange-500 to-yellow-300">
+                    Battle Score</h2>
+
+
+                <section class=" grid  flexgrid-cols-4 gap-x-4 ">
+
+
+                    <table class="flex-grow  border-2 col-start-1 col-end-2 table-auto">
+                        <thead>
+
+                            <tr>
+
+                                <th class="table-r">Pokemon</th>
+                                <th class="table-r">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-r">Pikachu</td>
+                                <td class="table-r">win</td>
+                            </tr>
+                            <tr>
+                                <td class="table-r">Charmander</td>
+                                <td class="table-r">Tie</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+
+                    <table class="flex-grow col-start-3 col-end-4 border-2 table-auto">
+                        <thead>
+
+                            <tr>
+
+                                <th class="table-r">Pokemon</th>
+                                <th class="table-r">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="table-r">Pikachu</td>
+                                <td class="table-r">win</td>
+                            </tr>
+                            <tr>
+                                <td class="table-r">Charmander</td>
+                                <td class="table-r">Tie</td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </section>
+                <!-- </section> -->
+                <div>
+                    <button class="mt-2 btn w-full text-themeColor-pokeyellow ">Final Stats</button>
                 </div>
-
-                <div class="flex justify-center flex-col items-center"><!-- div for user card -->
-
-                    <button
-                        class=" btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900 ">Fight!</button>
-                </div>
-
-                <div class="overflow-hidden bg-yellow-200 rounded shadow-md  shadow-themeColor-pokedrkblue">
-                    <!-- Image -->
-                    <figure>
-                        <img src="./assets/images/0c6beea8b51b64f6cbee98bf0fb5d2ce.gif" alt="card image"
-                            class="aspect-video w-full" />
-                    </figure>
-                </div>
-            </section>
-
-            <!-- Results Section -->
-    
-            <h2 
-                class="w-full max-w-screen py-2 my-4 font-bold flex justify-center items-center text-lg text-themeColor-pokedrkblue bg-gradient-to-b from-orange-500 to-yellow-300">
-                Battle Score</h2>
-
-            <!-- </div> -->
-
-            <section  class=" grid  flexgrid-cols-4 gap-x-4 ">
-
-
-                <table class="flex-grow  border-2 col-start-1 col-end-2 table-auto">
-                    <thead>
-
-                        <tr>
-
-                            <th class="table-r">Pokemon</th>
-                            <th class="table-r">Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-r">Pikachu</td>
-                            <td class="table-r">win</td>
-                        </tr>
-                        <tr>
-                            <td class="table-r">Charmander</td>
-                            <td class="table-r">Tie</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <table class="flex-grow col-start-3 col-end-4 border-2 table-auto">
-                    <thead>
-
-                        <tr>
-
-                            <th class="table-r">Pokemon</th>
-                            <th class="table-r">Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-r">Pikachu</td>
-                            <td class="table-r">win</td>
-                        </tr>
-                        <tr>
-                            <td class="table-r">Charmander</td>
-                            <td class="table-r">Tie</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>                
-            </section>
-            </section>
-            <div>
-                <button class="mt-2 btn w-full text-themeColor-pokeyellow ">Final
-                    Stats</button>
-            </div>
+            </article>
+        </main>
     </div>
-</article>
-    </main>
+
     <footer class=" p-1 mt-auto bg-gradient-to-b from-orange-500 to-yellow-300 m-2">
         <div class=" margin w-full max-w-screen-xl mx-auto p-2 md:py-2">
 
@@ -155,7 +155,7 @@
                 All Rights Reserved.</span>
         </div>
     </footer>
-    </div>
+    <!-- </div> -->
     <script src="./assets/js/script.js"></script>
 </body>
 
