@@ -48,10 +48,8 @@ async function fetchPokemon(pokemonName){
         imageDiv.appendChild(imgElement);
 
         // save left pokemon details in local storage
-        let leftPokemon = {name: monName, type: monType}
+        let leftPokemon = {name: monName, type: monType, image: monImage}
         localStorage.setItem("left-pokemon", JSON.stringify(leftPokemon));
-
-
     }
     catch(error){
         console.error(error);
@@ -84,7 +82,7 @@ async function fetchEnemyPokemon(pokemonName){
         imageDiv.appendChild(imgElement);
 
         // save right pokemon details in local storage
-        let rightPokemon = {name: enemyMonName, type: enemyMonType}
+        let rightPokemon = {name: enemyMonName, type: enemyMonType, image: enemyMonImage}
         localStorage.setItem("right-pokemon", JSON.stringify(rightPokemon));
     }
     catch(error){
