@@ -17,6 +17,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.0.2/glide.js"></script>
+    <script src="./assets/js/battleSystem.js"></script>
 </head>
 
 <body class="bg-gradient-to-b from-[#c7a008] to-yellow-100 dark:bg-purple-950 ">
@@ -46,19 +47,22 @@
                 <!-- Battlefield section-->
                 <section class=" grid md:grid-cols-3 sm:grid-flow-col">
 
-                    <div
-                        class=" overflow-hidden bg-yellow-200 rounded shadow-md shadow-themeColor-pokedrkblue dark:bg-gray-900 dark:rounded dark:shadow-lg dark:shadow-themeColor-pokeyellowshadow">
-                        <h2 class="text-lg flex items-center justify-center"> [Pokemon Name] </h2>
-                        <p>[ADDTYPE]</p>
-                        <!-- Image -->
-                        <figure>
-                            <img src="./assets/images/battle_placeholder.webp" alt="card image"
-                                class="aspect-video w-full" />
-                        </figure>
-                        <!-- Body-->
-                        <div class="p-1">
+                    <!-- Left card -->
+                    <div id="left-card"
+                        class=" overflow-hidden bg-yellow-200 rounded shadow-md shadow-themeColor-pokedrkblue 
+                        dark:bg-gray-900 dark:rounded dark:shadow-lg dark:shadow-themeColor-pokeyellowshadow">
+
+                        
+                        <div id="left-card-name" class="">
+                            
+                        </div>
+                        <div id="left-card-type" class="">
 
                         </div>
+                        <div id="left-card-image" class="">
+
+                        </div>
+
                         <!-- Action base sized basic button -->
                         <div class="flex justify-end p-6 pt-0">
                             <!-- btn -->
@@ -69,19 +73,24 @@
                         </div>
                     </div>
 
+                    <!-- (fight button) -->
                     <div class="flex justify-center flex-col items-center"><!-- div for user card -->
-
-                        <button
-                            class=" btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900 hover:scale-125">Fight!</button>
+                        <button id="fight-button" class=" btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900 ">Fight!</button>
                     </div>
 
-                    <div class="overflow-hidden bg-yellow-200 rounded shadow-md  shadow-themeColor-pokedrkblue">
-                        <h2 class="text-lg flex items-center justify-center"> [Pokemon Name] </h2>
-                        <!-- Image -->
-                        <figure>
-                            <img src="./assets/images/0c6beea8b51b64f6cbee98bf0fb5d2ce.gif" alt="card image"
-                                class="aspect-video w-full" />
-                        </figure>
+                    <!-- Right card -->
+                    <div id="right-card" class="overflow-hidden bg-yellow-200 rounded shadow-md  shadow-themeColor-pokedrkblue">
+
+                        <div id="right-card-name" class="">
+                            
+                        </div>
+                        <div id="right-card-type" class="">
+
+                        </div>
+                        <div id="right-card-image" class="">
+
+                        </div>
+
                     </div>
                 </section>
 
@@ -93,31 +102,30 @@
 
                 
 
-                <!-- Battle Score Table -->
-                
-                <section class=" grid">
-                    <table class="flex-grow table-auto">
+                <section class="grid flexgrid-cols-4 gap-x-4 ">
+
+                    <table class="flex-grow border-2 col-start-1 col-end-2 table-auto">
                         <thead>
                             <tr>
-
                                 <th class="table-r">Pokemon</th>
                                 <th class="table-r flex justify-center items-center">Score</th>
                                 <th class="table-r">Enemy</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td class="table-r">Pikachu</td>
-                                <td class="table-r flex justify-center items-center">win</td>
-                                <td class="table-r">Charmander</td>
-                            </tr>
-                            <tr>
-                                <td class="table-r">Pikachu</td>
-                                <td class="table-r flex justify-center items-center">win</td>
-                                <td class="table-r">Charmander</td>
+                        <tbody id="left-card-results" class="text-center">
+                            <!-- results appended here -->
+                        </tbody>
+                    </table>
 
+                    <table class="flex-grow col-start-3 col-end-4 border-2 table-auto">
+                        <thead>
+                            <tr>
+                                <th class="table-r">Pokemon</th>
+                                <th class="table-r">Score</th>
                             </tr>
-
+                        </thead>
+                        <tbody id="right-card-results" class="text-center">
+                            <!-- results appended here -->
                         </tbody>
                     </table>
                 </section>
