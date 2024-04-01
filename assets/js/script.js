@@ -12,7 +12,6 @@ function displayTime () {
 setInterval(displayTime, 1000);
 
 // Access toggle switch HTML element
-// document.addEventListener('DOMContentLoaded', function() {
   // Get the <i> element
   var toggleDarkIcon = document.querySelector('.toggle-dark');
 
@@ -50,7 +49,6 @@ setInterval(displayTime, 1000);
 });
 
   getLocalStorageFinalResults();
-// });
 
 //Start button functionality -2 
 function handleClickStart() {
@@ -86,20 +84,3 @@ function getLocalStorageFinalResults() {
     console.log(`${key}: ${value}`);
   }
 }
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    // Get the checkbox element
-    var checkbox = document.getElementById('checkbox-slider');
-
-    // Add event listener for 'click' event
-    checkbox.addEventListener('click', function() {
-        if (this.checked) { 
-            console.log('Checkbox is checked');
-            document.body.setAttribute("class", "dark");
-        } else {
-            console.log('Checkbox is not checked');
-            document.body.removeAttribute("class");
-        }
-    });
-});
