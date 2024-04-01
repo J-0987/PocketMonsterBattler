@@ -1,8 +1,9 @@
 
 const bodySelector =  document.querySelector('body');
-const gameSection = document.querySelector('#game-section')
 
 const startBtn = document.querySelector('#start-button');
+const carouselSection = document.querySelector('#carousel-section');
+const gameSection = document.querySelector('#game-section');
 
 //Update time
 
@@ -47,16 +48,17 @@ themeSwitcher.addEventListener('click', function () {
 //Start button functionality -2 
 function handleClickStart() {
   if (gameSection.classList.contains('hidden')) {
-    gameSection.classList.remove ('hidden');
-    startBtn.classList.add('hidden'); // Hide the start button
-  } else {
-    
+    gameSection.classList.remove('hidden');
+    carouselSection.classList.remove('hidden');
+    initCarousel();
+    startBtn.classList.add('hidden'); // Hide the start button    
+  } 
+  else {
     gameSection.classList.add('hidden');
+    carouselSection.classList.add('hidden');
     startBtn.classList.remove('hidden'); // Show the start button
-   
   }
 }
-
 
 startBtn.addEventListener('click', handleClickStart);
 
