@@ -16,7 +16,6 @@
         integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 </head>
 
-<!-- -->
 
 <body class="bg-gradient-to-b from-[#c7a008] to-yellow-100 dark:bg-black ">
     <div class="min-h-screen px-4 py-3">
@@ -38,91 +37,89 @@
 
 
 
-
-            <!-- Battlefield section-->
-            <section id="battlefield-section" class=" grid md:grid-cols-3 sm:grid-flow-col">
-             
-
-                <div class="flex justify-center flex-col items-center"><!-- div for user card -->
-
-                    <button
-                        class=" btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900 ">Fight!</button>
+                <!-- Main section-->
+                <div class="flex gap-x-2">
+                 <h2 class="mt-2 mb-3 btn w-full flex justify-center items-center text-themeColor-pokeyellow lg: text-2xl"> Final Stats</h2>
+                   
                 </div>
+                <section class=" flex border-purple-600 border-2 grid gap-x-2 md:grid-cols-2 sm:grid-flow-col">
 
-                <div class="overflow-hidden bg-yellow-200 rounded shadow-md  shadow-themeColor-pokedrkblue">
-                    <!-- Image -->
-                    <figure>
-                        <img src="./assets/images/0c6beea8b51b64f6cbee98bf0fb5d2ce.gif" alt="card image"
-                            class="aspect-video w-full" />
-                    </figure>
-                </div>
-            </section>
+                    <div class="overflow-hidden border-purple-600 bg-themeColor-pokeyellow">
+                        <h2 class="text-lg flex justify-center p-2">[Pokemon name]</h2>
+                        <!-- Image -->
+                        <figure>
+                          <img src="./assets/images/battle_placeholder.webp" alt="card image" class="aspect-video w-full" />
+                        </figure>
+                      <p>[ADDTYPE]</p>
+                        <!-- Body-->
+                        <div class="p-6">
+                         
+                          <p class="flex justify-center items-center text-lg font-semibold"> Champion Pokemon!</p>
+                        </div>
+                      </div>
+                      
+<!-- List of 5 best pokemon -->
+<ul class="divide-y divide-slate-100 gap-x-2 border-2">
 
-            <!-- Results Section -->
+    <li class="flex items-center bg-themeColor-pokeyellow justify-center gap-x-2 px-4 py-3">
+        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
+            <h4 class="text-base text-slate-700 text-lg font-bold">Top 5 battlers!</h4>
+        </div>
+    </li>
+    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
+        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
+            <h4 class="text-base text-slate-700 ">Pokemon</h4>
+        </div>
+    </li>
+    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
+        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
+            <h4 class="text-base text-slate-700 ">Pokemon</h4>
+        </div>
+    </li>
+    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
+        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
+            <h4 class="text-base text-slate-700 ">Pokemon</h4>
+        </div>
+    </li>
+   
     
-            <h2 id="battle-score-title"
-                class="w-full max-w-screen py-2 my-4 font-bold flex justify-center items-center text-lg text-themeColor-pokedrkblue bg-gradient-to-b from-orange-500 to-yellow-300">
-                Battle Score</h2>
+</ul>
+                    
+                </section>
 
-            <!-- </div> -->
+                <!-- Results Section -->
 
-            <section id="result-section" class=" grid  flexgrid-cols-4 gap-x-4 ">
+                <h2
+                    class="w-full max-w-screen py-2 my-4 font-bold flex justify-center items-center text-lg text-themeColor-pokedrkblue bg-gradient-to-b from-orange-500 to-yellow-300">
+                    Battle Score</h2>
 
 
-                <table class="flex-grow  border-2 col-start-1 col-end-2 table-auto">
-                    <thead>
-
-                        <tr>
-
-                            <th class="table-r">Pokemon</th>
-                            <th class="table-r">Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-r">Pikachu</td>
-                            <td class="table-r">win</td>
-                        </tr>
-                        <tr>
-                            <td class="table-r">Charmander</td>
-                            <td class="table-r">Tie</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>
-
-                <table class="flex-grow col-start-3 col-end-4 border-2 table-auto">
-                    <thead>
-
-                        <tr>
-
-                            <th class="table-r">Pokemon</th>
-                            <th class="table-r">Score</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td class="table-r">Pikachu</td>
-                            <td class="table-r">win</td>
-                        </tr>
-                        <tr>
-                            <td class="table-r">Charmander</td>
-                            <td class="table-r">Tie</td>
-
-                        </tr>
-
-                    </tbody>
-                </table>                
-            </section>
-            </section>
-            <div>
-                <button class="mt-2 btn w-full text-themeColor-pokeyellow ">Final
-                    Stats</button>
-            </div>
+                    <div class="w-full overflow-x-auto">
+                        <table class="w-full text-left border border-separate rounded border-slate-200" cellspacing="0">
+                          <tbody>
+                            <tr>
+                              <th scope="col" class="h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">Pokemon</th>
+                              <th scope="col" class=" flex justify-center items-center h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">Score(W/L/T)</th>
+                              <th scope="col" class="h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">Enemy</th>
+                             
+                            </tr>
+                            <tr class="odd:bg-slate-50">
+                              <td class="h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">Pokemon</td>
+                              <td class=" flex justify-center items-center h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">W</td>
+                              <td class="h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">Pikachu</td>
+                              
+                            </tr>
+                           
+                          </tbody>
+                        </table>
+                      </div>
+                </section>
+                <!-- </section> -->
+                
+         
+        </main>
     </div>
 
-    </main>
     <footer class=" p-1 mt-auto bg-gradient-to-b from-orange-500 to-yellow-300 m-2">
         <div class=" margin w-full max-w-screen-xl mx-auto p-2 md:py-2">
 
@@ -132,7 +129,7 @@
                 All Rights Reserved.</span>
         </div>
     </footer>
-    </div>
+    <!-- </div> -->
     <script src="./assets/js/script.js"></script>
 </body>
 

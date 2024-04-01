@@ -1,6 +1,5 @@
 
 const bodySelector =  document.querySelector('body');
-
 const startBtn = document.querySelector('#start-button');
 const carouselSection = document.querySelector('#carousel-section');
 const gameSection = document.querySelector('#game-section');
@@ -13,14 +12,6 @@ function displayTime () {
 } 
 setInterval(displayTime, 1000);
 
-// // method 1
-// const darkToggle = document.querySelector('.toggle-dark');
-// darkToggle.addEventListener ('click', function () {
-//     document.documentElement.classList.toggle('dark');
-//     bodySelector.setAttribute('body', 'dark');
-  
-// }
-// )
 
 // / Access toggle switch HTML element
 const themeSwitcher = document.querySelector('.toggle-dark');
@@ -39,7 +30,7 @@ themeSwitcher.addEventListener('click', function () {
   // If mode is light, apply dark background
   else {
     mode = 'dark';
-    container.setAttribute('class', 'bg-gradient-to-b from-[#c7a008] to-yellow-100 dark:bg-black');
+    container.setAttribute('class', 'dark');
     // header.setAttribute('class', 'dark');
   }
 });
