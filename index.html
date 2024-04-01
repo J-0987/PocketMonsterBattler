@@ -53,7 +53,7 @@
                         <div class="flex justify-end p-6 pt-0">
                             <!-- btn -->
                             <button id="change-pokemon-btn"
-                                class="hover:animate-bounce btn text-theme Color-pokeyellow inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide">
+                                class=" hover:animate-bounce btn text-themeColor-pokeyellow inline-flex items-center justify-center w-full h-10 gap-2 px-5 text-sm font-medium tracking-wide">
                                 <span>Change Pokemon!</span>
                             </button>
                         </div>
@@ -63,7 +63,7 @@
                     <div class="flex justify-center flex-col items-center">
                         <!-- div for user card -->
                         <button id="fight-button"
-                            class="btn align-middle text-3xl text-theme Color-pokeyellow text-bold px-10 py-10 dark:bg-gray-900">Fight!</button>
+                            class="btn align-middle text-3xl text-themeColor-pokeyellow text-bold px-10 py-10 dark:bg-gray-900">Fight!</button>
                     </div>
 
                     <!-- Right card -->
@@ -82,33 +82,39 @@
                 <h2 class="w-full max-w-screen py-2 my-4 font-bold flex justify-center items-center text-lg text-themeColor-pokedrkblue bg-gradient-to-b from-orange-500 to-yellow-300">
                     Battle Score</h2>
 
-                <section class="grid flexgrid-cols-4 gap-x-4">
+                 <!-- Results Section -->
 
-                    <table class="flex-grow border-2 col-start-1 col-end-2 table-auto">
-                        <thead>
-                            <tr>
-                                <th class="table-r">Pokemon</th>
-                                <th class="table-r flex justify-center items-center">Score</th>
-                            </tr>
-                        </thead>
-                        <tbody id="left-card-results" class="text-center">
-                            <!-- results appended here -->
-                        </tbody>
-                    </table>
 
-                    <table class="flex-grow col-start-3 col-end-4 border-2 table-auto">
-                        <thead>
-                            <tr>
-                                <th class="table-r">Pokemon</th>
-                                <th class="table-r flex justify-center items-center">Score</th>
-                            </tr>
-                        </thead>
-                        <tbody id="right-card-results" class="text-center">
-                            <!-- results appended here -->
-                        </tbody>
-                    </table>
-                </section>
+        <div class="w-full overflow-x-auto">
+            <table class="w-full text-left border border-separate rounded border-slate-200" cellspacing="0">
+                <tbody>
+                    <tr>
+                        <th scope="col"
+                            class="h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">
+                            Pokemon</th>
+                        <th scope="col"
+                            class="flex justify-center items-center h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">
+                            Score(W/L/T)</th>
+                        <th scope="col"
+                            class="h-12 px-6 text-sm font-medium border-l first:border-l-0 stroke-slate-700 text-slate-700 bg-slate-100">
+                            Enemy</th>
 
+                    </tr>
+                    <tr class="odd:bg-slate-50">
+                        <td
+                            class="h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">
+                            Pokemon</td>
+                        <td
+                            class="flex justify-center items-center h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">
+                            W</td>
+                        <td
+                            class="h-12 px-6 text-sm transition duration-300 border-t border-l first:border-l-0 border-slate-200 stroke-slate-500 text-slate-500 ">
+                            Pikachu</td>
+
+                    </tr>
+
+                </tbody>
+            </table>
                 <div>
                     <button id="results-page" class="mt-5 btn w-full text-themeColor-pokeyellow shadow hover:shadow-xl">Final
                         Stats</button>
