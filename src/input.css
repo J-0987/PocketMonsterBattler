@@ -26,4 +26,7 @@
     @apply bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900
 }
 
+.table-m {
+    @apply border-2 border-black text-white bg-gradient-to-r from-rose-700 to-pink-600
+}
 /* bg-gradient-to-r from-[#3c5aa6] to-[#2a75bb] */
