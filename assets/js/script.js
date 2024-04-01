@@ -1,3 +1,5 @@
+document.addEventListener("DOMContentLoaded", function() {
+
 const bodySelector =  document.querySelector('body');
 const startBtn = document.querySelector('#start-button');
 const carouselSection = document.querySelector('#carousel-section');
@@ -21,21 +23,16 @@ setInterval(displayTime, 1000);
     if (this.classList.contains("fa-sun")) {
         // If the button is clicked and it has the "fa-sun" class,
         // it means the dark mode is currently off. So, we'll turn it on.
-
         // Toggle the "dark" class on the body element
         document.body.classList = "bg-black";
-
         // Toggle the visibility of the sun and moon icons
         this.classList.remove("fa-sun");
         this.classList.add("fa-moon");
-
     } else {
         // If the button is clicked and it has the "fa-moon" class,
         // it means the dark mode is currently on. So, we'll turn it off.
-
         // Toggle the "dark" class on the body element
         document.body.classList = "bg-gradient-to-b from-[#c7a008] to-yellow-100 dark:bg-purple-950";
-
         // Toggle the visibility of the sun and moon icons
         this.classList.remove("fa-moon");
         this.classList.add("fa-sun");
@@ -48,10 +45,9 @@ setInterval(displayTime, 1000);
     }
 });
 
-  getLocalStorageFinalResults();
-
 //Start button functionality -2 
 function handleClickStart() {
+  console.log("START BTN CLICKED");
   if (gameSection.classList.contains('hidden')) {
     gameSection.classList.remove('hidden');
     carouselSection.classList.remove('hidden');
@@ -67,7 +63,6 @@ function handleClickStart() {
 
 startBtn.addEventListener('click', handleClickStart);
 
-
 //Final stats button clicks to results page
 function goToResults(){
   document.location.href = "results.html";
@@ -75,12 +70,4 @@ function goToResults(){
 
 finalResultsBtn.addEventListener('click', goToResults);
 
-
-// On the final result page
-function getLocalStorageFinalResults() {
-  for (let i = 0; i < localStorage.length; i++) {
-    const key = localStorage.key(i);
-    const value = localStorage.getItem(key);
-    console.log(`${key}: ${value}`);
-  }
-}
+});
