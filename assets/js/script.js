@@ -1,8 +1,9 @@
 
 const bodySelector =  document.querySelector('body');
-const gameSection = document.querySelector('#game-section');
+
 const startBtn = document.querySelector('#start-button');
 const carouselSection = document.querySelector('#carousel-section');
+const gameSection = document.querySelector('#game-section');
 
 //Update time
 
