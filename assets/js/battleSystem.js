@@ -15,7 +15,6 @@ document.addEventListener("DOMContentLoaded", function () {
     fetchPokemon(leftPokemon);
     fetchEnemyPokemon(rightPokemon);
   });
-
   // render results table for initial load
   displayResults();
 });
@@ -63,6 +62,7 @@ async function fetchPokemon(pokemonName) {
     // save left pokemon details in local storage
     let leftPokemon = { name: monName, type: monType, image: monImage };
     localStorage.setItem("left-pokemon", JSON.stringify(leftPokemon));
+
   } catch (error) {
     console.error(error);
   }
@@ -135,12 +135,16 @@ function fightPokemon() {
   let leftFightResults = {
     elementId: "left-card-results",
     name: leftPokemon.name,
+    type: leftPokemon.type,
     result: leftPokemonResult,
+    image: leftPokemon.image,
   };
   let rightFightResults = {
     elementId: "right-card-results",
     name: rightPokemon.name,
+    type: rightPokemon.type,
     result: rightPokemonResult,
+    image: rightPokemon.image,
   };
 
   // update results
@@ -946,11 +950,10 @@ function getRandomInt(min, max) {
 // loop over local storage results and display them
 function displayResults() {
   const localResults = JSON.parse(localStorage.getItem("results"));
-
   if (!localResults) {
     return;
   }
-
+  // Clear everything
   document.getElementById("left-card-results").innerHTML = "";
   document.getElementById("right-card-results").innerHTML = "";
 

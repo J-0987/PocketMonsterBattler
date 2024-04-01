@@ -43,16 +43,15 @@
                     Final Stats</h2>
 
             </div>
-            <section class="flex border-purple-600 border-2 grid gap-x-2 md:grid-cols-2 sm:grid-flow-col">
+            <section class=" border-purple-600 border-2 grid gap-x-2 md:grid-cols-2 sm:grid-flow-col">
 
                 <div class="overflow-hidden border-purple-600 bg-themeColor-pokeyellow">
-                    <h2 class="text-lg flex justify-center p-2">[Pokemon name]</h2>
+                    <h2 id="result-pokemon-name" class="text-lg flex justify-center p-2">[Pokemon name]</h2>
                     <!-- Image -->
-                    <figure>
-                        <img src="./assets/images/battle_placeholder.webp" alt="card image"
-                            class="aspect-video w-full" />
+                    <figure id="result-pokemon-image-figure">
+                        <!-- image will be appended into here -->
                     </figure>
-                    <p>[ADDTYPE]</p>
+                    <p id="result-pokemon-type" class="text-center">[ADDTYPE]</p>
                     <!-- Body-->
                     <div class="p-6">
 
@@ -61,30 +60,13 @@
                 </div>
 
                 <!-- List of 5 best pokemon -->
-                <ul class="divide-y divide-slate-100 gap-x-2 border-2">
+                <ul id="top-battlers" class="divide-y divide-slate-100 gap-x-2 border-2">
 
                     <li class="flex items-center bg-themeColor-pokeyellow justify-center gap-x-2 px-4 py-3">
                         <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
-                            <h4 class="text-base text-slate-700 text-lg font-bold">Top 5 battlers!</h4>
+                            <h4 class="text-slate-700 text-lg font-bold">Top 5 battlers!</h4>
                         </div>
                     </li>
-                    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
-                        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
-                            <h4 class="text-base text-slate-700 ">Pokemon</h4>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
-                        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
-                            <h4 class="text-base text-slate-700 ">Pokemon</h4>
-                        </div>
-                    </li>
-                    <li class="flex items-center justify-center gap-x-2 px-4 py-3">
-                        <div class="flex flex-col gap-0 min-h-[2rem] items-center justify-center">
-                            <h4 class="text-base text-slate-700 ">Pokemon</h4>
-                        </div>
-                    </li>
-
-
                 </ul>
 
             </section>
@@ -140,7 +122,6 @@
                 All Rights Reserved.</span>
         </div>
     </footer>
-    <!-- </div> -->
     <script src="./assets/js/final_results.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
