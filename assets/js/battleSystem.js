@@ -155,6 +155,14 @@ function fightPokemon() {
   localStorage.setItem("results", JSON.stringify(results));
   // render results table
   displayResults();
+
+  // Clear existing right card data
+  document.getElementById("right-card-name").textContent = "";
+  document.getElementById("right-card-type").textContent = "";
+  document.getElementById("right-card-image").innerHTML = "";
+
+  const newRightPokemon = getRandomInt(2, 151);
+  fetchEnemyPokemon(newRightPokemon);
 }
 
 // Get Pokemon Damage Type
